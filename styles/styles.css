@@ -1,0 +1,121 @@
+
+/* File: styles/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 2px;
+    font-family: 'Roboto',monospace;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    background-color: #60aad4f5;
+    padding: 20px;
+    text-align: center;
+    border: #ccc 4px ridge;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    list-style: none !important;
+}
+header a img {
+    width: 115px;
+    height: auto;
+    vertical-align: left;
+    float: left;
+}
+header h1 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 2em;
+        color: #266fc2;
+
+}
+header ul li {
+    margin: 20px 0;
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+    list-style: lower-alpha !important;
+    color: #dfdede;
+}
+
+
+/* Main content styles */
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagenes catalogo style */
+main div img {
+    border: 1px solid #000000;
+    width: 10vw;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+    float: middle;
+    margin: 0 0 20px 50px;
+}
+
+/* Home content style */
+main div.home-main{
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+/* Section headings */
+section h2 {
+    color: #60aad4f5;
+    border-bottom: 2px solid #60aad4f5;
+    padding-bottom: 10px;
+}
+/* Link styles */
+a {
+    color: #60aad4f5;
+    text-decoration: none;
+}
+
+/* Footer styles */
+
+.footer {
+
+    background-color: #60aad4f5;
+    padding: 20px;
+    text-align: right;
+    border: #ccc 4px ridge;
+}
+
+.footer p {
+    margin: 0;
+    color: #e4e3e3;
+    text-align: left;
+}
+/* Iconos de Redes sociales */ 
+
+#whatsapp {
+    width: 3vw;
+    height: auto;
+    margin: 0 20px;
+
+}
+.instagram_logo {
+    width: 3vw;
+    height: auto;
+}
+
+
