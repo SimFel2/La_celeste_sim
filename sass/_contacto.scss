@@ -1,0 +1,56 @@
+@use "variables" as v;
+
+main{
+    h1{
+        color: v.$color-principal;
+        text-align: left;
+        margin-top: 20px;
+    }
+    label{
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: v.$color-principal;
+        text-align: center;
+    }
+    input, textarea{
+        transform: translateX(75%);
+        width: 40%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 2px solid v.$color-principal;
+        border-radius: 5px;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+    
+        &:focus{
+            border-color: darken(v.$color-principal, 30%);
+            outline: none;
+        }
+    }
+    
+    .checkbox{
+                margin-left: 10px;
+                margin-right: 10px;
+                vertical-align: middle;       
+            }
+
+
+    button{
+        margin-top: 10px;
+        padding: 10px 20px;
+        vertical-align: bottom;
+        background-color: v.$color-principal;
+        color: v.$color-secundario;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: darken(v.$color-principal, 10%);
+        }
+    }
+}

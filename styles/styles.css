@@ -1,239 +1,263 @@
-
-/* File: styles/styles.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* Reset styles */
 * {
-    margin: 0;
-    padding: 2px;
-    font-family: 'Roboto',monospace;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 2px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
-/* Header styles */
-header {
-    display: flex;
-    background-color: #60aad4f5;
-    padding: 20px;
-    text-align: center;
-    border: #ccc 4px ridge;
-    vertical-align: middle;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1000;
-}
-
-header a {
-    text-decoration: none;
-    color: #fff;
-    list-style: none !important;
-}
-header a img {
-    width: 115px;
-    height: auto;
-    vertical-align: relative;
-    float: left;
-}
-
-/* styles del menu hamburguesa (me confundi el hamburguesa con el acordeon) */
-header .acordeon {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    margin-top: 10px;
-    text-decoration: solid;
-    vertical-align: middle;
-}
-header .acordeon a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #fff;
-    border-width: 2px;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-    }
-
-
-
-@media (min-width: 768px) {
-    header .acordeon{
-        text-align: center;
-        width: 100px;
-        margin: 80 auto;
-    }
-    header h1 {
-        font-size: 1.5em;
-    }
-}
-
-
-/* Main content styles */
-main {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Imagenes catalogo style */
 main div img {
-    border: 1px solid #000000;
-    width: 10vw;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 20px;
-    float: middle;
-    margin: 0 0 20px 50px;
+  border: 1px solid #000000;
+  width: 10vw;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+  float: middle;
+  margin: 0 0 20px 50px;
 }
-
-/* Home content style */
-    main div.home-main{
-        line-height: 1;
-        color: #333;
-        font-size: 1.1em;
-        margin-bottom: 10px;
-        text-align: justify;
-    }
-/* Home Carousel styles */
-/* no funcionó :( */
-
-
-
-
-
-    /* Section styles */
-    section {
-        margin-bottom: 20px;
-    }
-    /* Section headings */
-    section h2 {
-        color: #60aad4f5;
-        border-bottom: 2px solid #60aad4f5;
-        padding-bottom: 10px;
-    }
-    /* Link styles */
-    a {
-        color: #60aad4f5;
-        text-decoration: none;
-    } 
-
-/* Quienes somos styles */
-main div.quienes {
-    line-height: 1.3;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
+main section {
+  margin-bottom: 20px;
 }
-
-/* sucursales styles */
-main .sucursales {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    list-style: none;
+main section h2 {
+  color: rgba(96, 170, 212, 0.9607843137);
+  border-bottom: 2px solid rgba(96, 170, 212, 0.9607843137);
+  padding-bottom: 10px;
 }
-
-main .sucursales h1, main .sucursales h2 {
-    text-align: center;
-    color: #60aad4f5;
+main a {
+  color: rgba(96, 170, 212, 0.9607843137);
+  text-decoration: none;
 }
-main .sucursales li {
-    margin: 10px 0;
-    text-align: center;
-    list-style: none;
-}
-
-
-/* catalogo Grid-style */
 main .productos-catalog {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr); 
-    gap: 20px;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
 }
-/* Catalogo product styles */
 main .productos-catalog .producto {
-    border-color: #60aad4f5;
-    border-style: solid;
-    border-width: 7px;
-    margin: auto;
-    padding: 10px;
-    width: 80%;
-    border-radius: 15px;
-    text-align: center;
+  border-color: rgba(96, 170, 212, 0.9607843137);
+  border-style: solid;
+  border-width: 7px;
+  margin: 20px;
+  padding: 10px;
+  width: 80%;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 main .productos-catalog .producto img {
-    width: 70%;
-    height: auto;
-    border-radius: 10px;
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+main .productos-catalog .producto:hover {
+  transform: scale(1.05);
+}
+
+@keyframes transform {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 425px) {
+  main .productos-catalog {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+main h1 {
+  color: rgba(96, 170, 212, 0.9607843137);
+  text-align: left;
+  margin-top: 20px;
+}
+main label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: rgba(96, 170, 212, 0.9607843137);
+  text-align: center;
+}
+main input, main textarea {
+  transform: translateX(75%);
+  width: 40%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid rgba(96, 170, 212, 0.9607843137);
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+main input:focus, main textarea:focus {
+  border-color: rgba(32.995049505, 89.7772277228, 122.004950495, 0.9607843137);
+  outline: none;
+}
+main .checkbox {
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+main button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  vertical-align: bottom;
+  background-color: rgba(96, 170, 212, 0.9607843137);
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+main button:hover {
+  background-color: rgba(55.8564356436, 148.5396039604, 201.1435643564, 0.9607843137);
+}
+
+footer {
+  background-color: rgba(96, 170, 212, 0.9607843137);
+  padding: 20px;
+  text-align: right;
+  border: #f5f5f5 4px ridge;
+}
+footer p {
+  color: #f5f5f5;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  vertical-align: bottom;
+}
+footer #whatsapp {
+  width: 4.5vw;
+  height: auto;
+  vertical-align: middle;
+}
+footer .instagram_logo {
+  width: 6vw;
+  height: auto;
+  vertical-align: middle;
+}
+
+header {
+  display: flex;
+  background-color: rgba(96, 170, 212, 0.9607843137);
+  padding: 20px;
+  text-align: center;
+  border: #f5f5f5 4px ridge;
+  vertical-align: middle;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+header a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  list-style: none;
+}
+header a img {
+  width: 115px;
+  height: auto;
+  vertical-align: relative;
+  float: left;
+}
+header .acordeon {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-top: 10px;
+  text-decoration: solid;
+  vertical-align: middle;
+}
+header .acordeon a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #f5f5f5;
+  border-width: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  header .acordeon {
     text-align: center;
-    image-rendering:crisp-edges;
+    width: 100px;
+    margin: 30 auto;
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 1.5em;
+  }
+}
+main div .home-main {
+  line-height: 1;
+  color: #333;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+main .quienes {
+  line-height: 1.3;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main .sucursales {
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  list-style: none;
+}
+main .sucursales h1 {
+  color: rgba(96, 170, 212, 0.9607843137);
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+main .sucursales h2 {
+  text-align: center;
+  color: rgba(96, 170, 212, 0.9607843137);
+}
+main .sucursales li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 10px 0;
+  list-style: none;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+}
+main .sucursales li p {
+  color: rgba(96, 170, 212, 0.9607843137);
+  font-size: 1em;
+  margin: 5px 0;
 }
 
 @media (max-width: 425px) {
-    main .productos-catalog {
-        grid-template-columns: 1fr;
-        gap: 10px;
-
-    }
+  main .sucursales iframe {
+    width: 70vw;
+    height: 25vh;
+  }
 }
 
-/* media de sucursales */
-@media (max-width: 425px) {
-    .sucursales {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .sucursales li iframe {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        text-align: center;
-    }
-    .sucursales h1, .sucursales h2 {
-        text-align: center;
-    }
-}
-
-/* Footer styles */
-
-.footer {
-
-    background-color: #60aad4f5;
-    padding: 20px;
-    text-align: right;
-    border: #ccc 4px ridge;
-}
-
-.footer p {
-    margin: 0;
-    color: #e4e3e3;
-    text-align: left;
-    vertical-align: middle;
-}
-/* Iconos de Redes sociales */ 
-
-#whatsapp {
-    width: 4.5vw;
-    height: auto;
-    vertical-align: middle;
-
-}
-.instagram_logo {
-    width: 6vw;
-    height: auto;
-    vertical-align: middle;
-}
-
-
+/*# sourceMappingURL=styles.css.map */

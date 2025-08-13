@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$fuente: 'Roboto', sans-serif;
+$color-principal: #60aad4f5;
+$color-secundario: #f5f5f5;
+$margen: 10px;
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 2px;
+    font-family: $fuente;
+    box-sizing: border-box;
+}

@@ -1,0 +1,27 @@
+@use "variables" as v;
+
+footer {
+    background-color: v.$color-principal;
+    padding: 20px;
+    text-align: right;
+    border: v.$color-secundario 4px ridge;
+
+    p {
+        color: v.$color-secundario;
+        font-size: 0.9em;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+        vertical-align: bottom;
+    }
+    #whatsapp{
+        width: 4.5vw;
+        height: auto;
+        vertical-align: middle;
+    }
+    .instagram_logo {
+        width: 6vw;
+        height: auto;
+        vertical-align: middle;
+    }
+}

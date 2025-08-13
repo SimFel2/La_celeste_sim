@@ -1,0 +1,63 @@
+@use 'variables'as v;
+
+header {
+  display: flex;
+  background-color: v.$color-principal;
+  padding: 20px;
+  text-align: center;
+  border: v.$color-secundario 4px ridge;
+  vertical-align: middle;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+
+  a {
+    color: v.$color-secundario;
+    text-decoration: none;
+    font-weight: bold;
+    list-style: none;
+    img {
+        width: 115px;
+        height: auto;
+        vertical-align: relative;
+        float: left;
+    }
+  }
+  
+  .acordeon {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-top: 10px;
+    text-decoration: solid;
+    vertical-align: middle;
+
+    a {
+      color: v.$color-secundario;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border-style: solid;
+      border-color: v.$color-secundario;
+      border-width: 2px;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+    }
+  }
+  
+}
+@media (min-width: 768px) {
+    header{ 
+    .acordeon{
+        text-align: center;
+        width: 100px;
+        margin: 30 auto;
+        padding: 10px;
+    }
+     h1 {
+        font-size: 1.5em;
+    }
+  }
+}
