@@ -40,7 +40,6 @@ main{
     button{
         margin-top: 10px;
         padding: 10px 20px;
-        vertical-align: bottom;
         background-color: v.$color-principal;
         color: v.$color-secundario;
         border: none;
@@ -53,4 +52,21 @@ main{
             background-color: darken(v.$color-principal, 10%);
         }
     }
+}
+
+@media (max-width: 768px) {
+    main{
+        h1{
+            font-size: 1.2em;
+        }
+        input, textarea{
+            width: 90%;
+            transform: translateX(0);
+        }
+        button{
+            width: 100%;
+            padding: 15px;
+        }
+    }
+    
 }
