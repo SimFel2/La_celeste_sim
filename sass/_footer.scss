@@ -21,7 +21,6 @@ footer {
     }
     .instagram_logo {
         width: 6vw;
-        height: auto;
-        vertical-align: middle;
+        @extend #whatsapp;
     }
 }

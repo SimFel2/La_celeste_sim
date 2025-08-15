@@ -148,15 +148,13 @@ footer p {
   text-align: left;
   vertical-align: bottom;
 }
-footer #whatsapp {
+footer #whatsapp, footer .instagram_logo {
   width: 4.5vw;
   height: auto;
   vertical-align: middle;
 }
 footer .instagram_logo {
   width: 6vw;
-  height: auto;
-  vertical-align: middle;
 }
 
 header {
