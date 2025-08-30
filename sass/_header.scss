@@ -2,15 +2,15 @@
 
 header {
   display: flex;
+
   background-color: v.$color-principal;
   padding: 20px;
   text-align: center;
-  border: v.$color-secundario 4px ridge;
   vertical-align: middle;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  z-index: 1000;
+  width: 100vw;
+  height: auto;
 
   a {
     color: v.$color-secundario;
@@ -38,6 +38,7 @@ header {
       text-decoration: none;
       font-weight: bold;
       padding: 10px 20px;
+      margin: 5px;
       border-radius: 5px;
       border-style: solid;
       border-color: v.$color-secundario;
@@ -48,7 +49,7 @@ header {
   }
   
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     header{ 
     .acordeon{
         text-align: center;

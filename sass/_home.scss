@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 main{
     div{
         .home-main{
@@ -7,5 +9,6 @@ main{
             margin-bottom: 10px;
             text-align: justify;
         }
+        
     }
 }

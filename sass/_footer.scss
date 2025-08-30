@@ -4,7 +4,6 @@ footer {
     background-color: v.$color-principal;
     padding: 20px;
     text-align: right;
-    border: v.$color-secundario 4px ridge;
 
     p {
         color: v.$color-secundario;
@@ -22,5 +21,21 @@ footer {
     .instagram_logo {
         width: 6vw;
         @extend #whatsapp;
+    }
+}
+
+@media (max-width: 768px) {
+    footer{
+        p{
+            font-size: 0.8em;
+        }
+        #whatsapp{
+            width: 10vw;
+            height: auto;
+        }
+        .instagram_logo{
+            width: 15vw;
+            height: auto;
+        }
     }
 }

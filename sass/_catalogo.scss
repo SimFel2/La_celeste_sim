@@ -15,40 +15,48 @@ main{
     section{
         margin-bottom: 20px;
         h2{
+            margin: 10px ;
             color: v.$color-principal;
-            border-bottom: 2px solid v.$color-principal;
+            // border-bottom: 2px solid v.$color-principal;
             padding-bottom: 10px;
 
         }
     }
     a {
-        color: v.$color-principal ;
+        color: v.$color-principal;
         text-decoration: none;
     }
     
     .productos-catalog{
         display: grid;
-        grid-template-columns: repeat(3, 3fr); 
-        gap: 20px;
+        grid-template-columns: repeat(2, 2fr); 
+        margin: 20px;
+        gap: 10px;
+        justify-items: center;
         margin-top: 20px;
-        padding: 20px;
+        // padding: 20px;
         border-radius: 5px;
 
         .producto{
             border-color: v.$color-principal;
             border-style: solid;
             border-width: 7px;
-            margin: 20px;
-            padding: 10px;
-            width: 80%;
+            // background-color: v.$color-principal;
+            // margin: 20px;
+            // padding: 10px;
+            // align-self: center;
+            width: 40vw;
+            height: auto;
             border-radius: 15px;
             text-align: center;
             img{
-                width: 70%;
+                width: 25vw;
                 height: auto;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 10px;
+                border-style: unset;
                 border-radius: 10px;
-                text-align: center;
-                // animation
                 
             }
         transition: transform 0.3s ease;
@@ -77,8 +85,25 @@ main{
 @media (max-width: 425px) {
     main .productos-catalog {
         grid-template-columns: 1fr;
+        width: 100vw;
+        margin: 0;
         gap: 10px;
+        height: auto;
+        justify-items: center;
+        width: 100vw;
+        .producto{
+            width: 80vw;
+            height: auto;
 
+            img{
+                justify-items: center;
+                width: 60vw;
+                margin: 10px;
+                margin-bottom: 10px;
+                padding: 0;
+                height: auto;
+            }
+        }
     }
 }
 

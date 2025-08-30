@@ -15,13 +15,12 @@ main{
     }
     input, textarea{
         transform: translateX(75%);
-        width: 40%;
+        width: 40vw;
+        margin: 5px;
         padding: 10px;
-        margin-top: 5px;
         border: 2px solid v.$color-principal;
         border-radius: 5px;
-        font-size: 1em;
-        font-family: Arial, sans-serif;
+        font-family: v.$fuente;
         box-sizing: border-box;
     
         &:focus{
@@ -37,20 +36,15 @@ main{
             }
 
 
-    button{
-        margin-top: 10px;
-        padding: 10px 20px;
-        background-color: v.$color-principal;
-        color: v.$color-secundario;
-        border: none;
-        border-radius: 5px;
-        font-size: 1em;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
 
-        &:hover{
-            background-color: darken(v.$color-principal, 10%);
-        }
+    .boton{
+        display: block;
+        margin: 10px;
+        transform: translateX(70vw);
+        width: 1px;
+        padding: 10px 20px;
+        border-radius: 5px;
+
     }
 }
 
@@ -60,12 +54,14 @@ main{
             font-size: 1.2em;
         }
         input, textarea{
-            width: 90%;
-            transform: translateX(0);
+            width: 80vw;
+            align-items: center ;
+            transform: translateX(10vw);
         }
-        button{
-            width: 100%;
-            padding: 15px;
+        .boton{
+            transform: translateX(65vw);
+            margin: 10px;
+            width: 1px;
         }
     }
     
